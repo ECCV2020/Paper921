@@ -1,6 +1,6 @@
 # Discretization-Aware Architecture Search
 
-##Abstract
+## Abstract
 The search cost of neural architecture search (NAS) has been largely reduced by weight-sharing methods. These methods optimize a super-network with all possible edges and operations, and determine the optimal sub-network by discretization, i.e., pruning off weak candidates. The discretization process, performed on either operations or edges, incurs significant inaccuracy and thus the quality of the final architecture is not guaranteed. This paper presents discretization-aware architecture search (DA2S), with the core idea being adding a loss term to push the super-network towards the configuration of desired topology, so that the accuracy loss brought by disretization is largely alleviated. Experiments on standard image classification benchmarks demonstrate the superiority of our approach, in particular, under imbalanced target network configurations that were not studied before.
 
 Weight-sharing methods determine sub-networks by discretization, i.e. by pruning off weak candidates, and the discretization process incurs signficant inaccuracy. We propose discretization-aware architecture search to alleviate this issue. The main idea is to introduce an additional term to the loss function, so that the architectural parameters of the super-network is gradually pushed towards the desired configuration during the search process.
